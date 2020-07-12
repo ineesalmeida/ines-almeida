@@ -21,16 +21,17 @@ title = "Inês Almeida"
 [params]
   author = "Inês Almeida"
   email = "ineesalmeida@gmail.com"
-  description = "Landing Page"
-  bio = "Software Developer.  \nBiomedical Engineer.  \nGraphic Design Enthusiast"
   avatar = "img/me.jpg"
   favicon = "img/myfavicon.ico"
-  error404 = "There is no such page."
-
-[params]
-  sections = ["home", "about", "experience", "education", "projects", "contact"]
+  sections = ["hero", "about", "experience", "education", "projects", "contact"]
 
 [params.contact]
   github = "https://github.com/ineesalmeida"
   instagram = "https://www.instagram.com/inees_almeida/"
   linkedin = "https://www.linkedin.com/in/ines-de-almeida/"
+
+[params.color]
+  primary = "royalblur"
+  secondary = "coral"
+  light = "aliceblue"
+  dark = "#333"

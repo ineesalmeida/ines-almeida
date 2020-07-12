@@ -1,4 +1,13 @@
 {{ partial "head" . }}
-{{ partial "header" . }}
-<body>{{ partial "body" . }}</body>
+<body>
+
+	{{ partial "header.html" . }}
+
+	{{ range .Site.Params.sections }}
+	{{ partial . $ }}
+	{{ end }}
+
+	{{ partial "footer.html" . }}
+</body>
+
 {{ partial "footer" . }}

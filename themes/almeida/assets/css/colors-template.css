@@ -1,0 +1,16 @@
+.bg-primary {
+  background-color: {{ $.Site.Params.color.primary }};
+  color: {{ $.Site.Params.color.light }};
+}
+.bg-secondary {
+  background-color: {{ $.Site.Params.color.secondary }};
+  color: {{ $.Site.Params.color.light }}
+}
+.bg-dark {
+  background-color: {{ $.Site.Params.color.dark }};
+  color: {{ $.Site.Params.color.light }};
+}
+.bg-light {
+  background-color: {{ $.Site.Params.color.light }};
+  color: {{ $.Site.Params.color.dark }};
+}
