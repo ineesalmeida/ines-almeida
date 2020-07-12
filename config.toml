@@ -11,7 +11,8 @@ disableRSS = true
 enableRobotsTXT = true
 editor = "nano"
 languageCode = "en-us"
-theme = "vncnt-hugo"
+# theme = "vncnt-hugo"
+theme = "almeida"
 title = "Inês Almeida"
 
 [permalinks]
@@ -25,6 +26,9 @@ title = "Inês Almeida"
   avatar = "img/me.jpg"
   favicon = "img/myfavicon.ico"
   error404 = "There is no such page."
+
+[params]
+  sections = ["home", "about", "experience", "education", "projects", "contact"]
 
 [params.contact]
   github = "https://github.com/ineesalmeida"
