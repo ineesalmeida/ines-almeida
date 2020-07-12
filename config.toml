@@ -1,0 +1,32 @@
+baseURL = "http://ines-almeida.com/"
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs = true
+disableRSS = true
+enableRobotsTXT = true
+editor = "nano"
+languageCode = "en-us"
+theme = "vncnt-hugo"
+title = "Inês Almeida"
+
+[permalinks]
+  fixed = ":title/"
+
+[params]
+  author = "Inês Almeida"
+  email = "ineesalmeida@gmail.com"
+  description = "Landing Page"
+  bio = "Software Developer.  \nBiomedical Engineer.  \nGraphic Design Enthusiast"
+  avatar = "img/me.jpg"
+  favicon = "img/myfavicon.ico"
+  error404 = "There is no such page."
+
+[params.contact]
+  github = "https://github.com/ineesalmeida"
+  instagram = "https://www.instagram.com/inees_almeida/"
+  linkedin = "https://www.linkedin.com/in/ines-de-almeida/"
