@@ -1,0 +1,23 @@
+<div id="profile-section" class="container-fluid bg-primary text-center">
+  <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-3">
+        <img src={{ .Site.Params.avatar }} class="img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
+      </div>
+      <div id="profile-text" class="col-md-5">
+          <h2>{{ .Site.Params.author }}</h2>
+          <h3>{{ .Site.Params.title }}</h3>
+          <p>{{ .Site.Params.profile | markdownify }}</p>
+
+          <h2>
+            {{ with .Site.Params.email }}<a class="icon" href="mailto:{{ . }}" target="_blank" rel="noopener me">
+              <i class="fas fa-envelope" title="email" aria-label="Send email."></i>
+            </a>{{ end }}
+            {{ range $contact_key,  $contact_link := .Site.Params.contact }}<a class="icon" href="{{ $contact_link }}" target="_blank" rel="noopener me">
+              <i class="fab fa-{{ $contact_key }}" title="{{ $contact_key }}" aria-label="Go to {{ $contact_key }}."></i>
+            </a>{{ end }}
+          </h2>
+      </div>
+      <div class="col-md-2"></div>
+  </div>
+</div>

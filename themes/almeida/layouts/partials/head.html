@@ -5,14 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <base href="{{ .Site.BaseURL }}">
     <link rel="canonical" href="{{ .Permalink }}">
-    {{partial "includes" . }}{{partial "scripts" . }}
+    {{partial "scripts" . }}
     {{ with .Site.Params.favicon }}<link rel="shortcut icon" href="/{{.}}">{{ end }}
 
     {{ $templateStyle := resources.Get "css/colors-template.css" }}
     {{ $style := $templateStyle | resources.ExecuteAsTemplate "css/color.css" . }}
     <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    {{ with .Site.Params.favicon }}<link rel="shortcut icon" href="/{{.}}">{{ end }}
 </head>

@@ -1,7 +1,8 @@
 # homepage
 homepage:
   head:
-    title: "Home | Raditian"
+    title: "Inês Almeida"
+
 # showcase
 showcase:
   enable: true
@@ -31,29 +32,11 @@ showcase:
     - icon: "twitter"
       URL: "https://twitter.com/radity"
 
-    - icon: "dribbble"
-      URL: "https://dribbble.com/radity"
-
-    - icon: "behance"
-      URL: "https://www.behance.net/radity-digital"
-
-    - icon: "youtube"
-      URL: "https://www.youtube.com/channel/UCojEc6SPO-W1_CoeHhK9-Zw"
-
     - icon: "instagram"
       URL: "https://www.instagram.com/teamradity/"
 
-    - icon: "facebook"
-      URL: "https://www.facebook.com/raditycom/"
-
-    - icon: "codepen"
-      URL: "#"
-
-    - icon: "yelp"
-      URL: "https://www.yelp.com/"
-
-# about
-about:
+# profile
+profile:
   enable: true
   title: "Who am I?"
   content: '<p class="lead">
@@ -102,55 +85,22 @@ experience:
     URL: "#"
 
   items:
-    - title: "Sr. Front-End Developer"
-      company: "Radity"
-      duration: "Feb 2011 - Sep 2019"
+    - title: "Software Engineer"
+      company: "Perspectum"
+      duration: "Jan 2020 - Now"
+      description: "To anyone stumbling through the internet that finds this issue for related reasons: Somewhere in your YAML you have extra spaces (or not enough spaces) before a key value. Thank you all for helping me solve this on a completely different project!"
 
-    - title: "Sr. Front-End Developer"
-      company: "Textic"
-      duration: "Apr 2010 - Jan 2011"
+    - title: "Test Engineer"
+      company: "Perspectum"
+      duration: "Mar 2019 - Jan 2020"
+      description: "To anyone stumbling through the internet that finds this issue for related reasons: Somewhere in your YAML you have extra spaces (or not enough spaces) before a key value. Thank you all for helping me solve this on a completely different project!"
 
-    - title: "Jr. Front-End Developer"
+    - title: "Lab Technician"
       company: "Cyberse"
       duration: "Jun 2009 - Mar 2010"
+      description: "To anyone stumbling through the internet that finds this issue for related reasons: Somewhere in your YAML you have extra spaces (or not enough spaces) before a key value. Thank you all for helping me solve this on a completely different project!"
 
-# Client & Work
-client_and_work:
-  title: "Clients & Works"
-  enable: true
-
-  clients:
-    - logo:
-        x: "img/clients/asgardia.png"
-        _2x: "img/clients/asgardia@2x.png"
-      alt: "Asgardia"
-
-    - logo:
-        x: "img/clients/earth-2.png"
-        _2x: "img/clients/earth-2@2x.png"
-      alt: "Earth 2.0"
-
-    - logo:
-        x: "img/clients/goldline.png"
-        _2x: "img/clients/goldline@2x.png"
-      alt: "Goldline"
-
-    - logo:
-        x: "img/clients/kanba.png"
-        _2x: "img/clients/kanba@2x.png"
-      alt: "Kanba"
-
-    - logo:
-        x: "img/clients/zoo-tv.png"
-        _2x: "img/clients/zoo-tv@2x.png"
-      alt: "Zoo"
-
-    - logo:
-        x: "img/clients/ztos.png"
-        _2x: "img/clients/ztos@2x.png"
-      alt: "Ztos"
-
-  works:
+  projects:
     - title: "Radity Finance - UI Kit"
       description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
       button:
@@ -184,39 +134,11 @@ client_and_work:
         _2x: "img/works/robo-advisor@2x.jpg"
       is_even: true
 
-# testimonial
-testimonial:
-  enable: true
-  title: "Testimonials"
-  items:
-    - name: "Daniel Jordan"
-      position: "Phonet, CEO"
-      content: "Cold calling can be a great way to generate quality leads. You get to speak to the gatekeepers and stakeholders, and you get a great insight into their requirements and influences. But cold calling is an art-form. It can be daunting, it’s always a lot of work, and you always need to make a good impression."
-      image:
-        x: "img/testimonials/daniel-jordan.jpg"
-        _2x: "img/testimonials/daniel-jordan@2x.jpg"
-
-    - name: "Jonathan Peters"
-      position: "Textic, CEO"
-      content: "Whether you or your loved one is encountering the natural decrease in mobility that occurs with the passing of time, or deals with an illness-related lack of physical agility, a stair lift can be the ideal way to put you in charge of your home again. Regardless of the shape or make of your living accommodation."
-      image:
-        x: "img/testimonials/jonathan-peters.jpg"
-        _2x: "img/testimonials/jonathan-peters@2x.jpg"
-
-    - name: "Antonio Willis"
-      position: "Cyberse, CEO"
-      content: "In this digital generation where information can be easily obtained within seconds, business cards still have retained their importance in the achievement of increased business exposure and business sales. If your business already has a bunch of printed cards distributed to a number of potential customers and yet."
-      image:
-        x: "img/testimonials/antonio-willis.jpg"
-        _2x: "img/testimonials/antonio-willis@2x.jpg"
-
 # contact
 contact:
   enable: true
   title: "Contact"
   form:
-    method: "POST"
-    action: "#"
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
@@ -225,7 +147,7 @@ contact:
     number: "+41 (44) 505 10 99"
   email:
     title: "Email"
-    email: '<a href="mailto:team@radity.com">team@radity.com</a>'
+    email: '<a href="mailto:ineesalmeida@gmail.com">ineesalmeida@gmail.com</a>'
   address:
     title: "Address"
     address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
