@@ -1,38 +1,47 @@
-<div id="contact-section" class="container-fluid bg-dark text-center">
+<div id="contact-section" class="container-fluid bg-dark text-center section scrollspy">
   <div class="row">
     <div class="col s12 m2"></div>
-    <div class="col s12 m4">
-      <h2>Contact</h2>
-      <div class="contact-form">
-          <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
-              <div class="row">
-                  <div class="input-field col s6">
-                        <input type="text" name="" id="full_name"/>
-                        <label for="full_name">{{ .Site.Data.homepage.contact.form.full_name }}</label>
+    <div class="col s12 m8">
+      <div class="row"></div>
+      <h2>Contact Me</h2>
+      <div class="col s12 m4">
+        <p>Inês Almeida</p>
+        <p>Inês Almeida</p>
+        <p>Inês Almeida</p>
+        <p>Inês Almeida</p>
+        <p>Inês Almeida</p>
+      </div>  
+        <div class="col s12 m8">
+          <div class="contact-form">
+              <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
+                  <div class="row">
+                      <div class="input-field col s6">
+                            <input type="text" class="materialize-textarea" id="full_name"/>
+                            <label for="full_name">{{ .Site.Data.homepage.contact.form.full_name }}</label>
+                      </div>
+                      <div class="input-field col s6">
+                            <input type="text" class="materialize-textarea" id="email"/>
+                            <label for="email">{{ .Site.Data.homepage.contact.form.email }}</label>
+                      </div>
                   </div>
-                  <div class="input-field col s6">
-                        <input type="text" name="" id="email"/>
-                        <label for="email">{{ .Site.Data.homepage.contact.form.email }}</label>
+                  <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">{{ .Site.Data.homepage.contact.form.message }}</label>
+                      </div>
                   </div>
-              </div>
-              <div class="row">
-                  <div class="input-field col s12">
-                    <textarea name="" id="message" class="materialize-textarea"></textarea>
-                    <label for="message">{{ .Site.Data.homepage.contact.form.message }}</label>
+                  <div class="row pt-4">
+                      <div class="col s12">
+                          <button type="submit" class="btn btn-primary">
+                              <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
+                              {{ .Site.Data.homepage.contact.button.btnText }}
+                          </button>
+                      </div>
                   </div>
-              </div>
-              <div class="row pt-4">
-                  <div class="col s12">
-                      <button type="submit" class="btn btn-primary">
-                          <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
-                          {{ .Site.Data.homepage.contact.button.btnText }}
-                      </button>
-                  </div>
-              </div>
-          </form>
+              </form>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col s12 m4"></div>
     <div class="col s12 m2"></div>
   </div>
 </div>

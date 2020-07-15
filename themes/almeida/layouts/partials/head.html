@@ -9,6 +9,7 @@
     {{partial "scripts" . }}
     {{ with .Site.Params.favicon }}<link rel="shortcut icon" href="/{{.}}">{{ end }}
 
+    <!-- Style sheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     {{ $templateStyle := resources.Get "css/colors-template.css" }}
@@ -19,5 +20,6 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
 
-    {{ with .Site.Params.favicon }}<link rel="shortcut icon" href="/{{.}}">{{ end }}
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>

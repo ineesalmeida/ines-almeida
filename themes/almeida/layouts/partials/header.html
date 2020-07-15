@@ -2,11 +2,26 @@
   <nav>
     <div class="nav-wrapper teal lighten-3">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="profile-section.html">PROFILE</a></li>
-        <li><a href="experience-section.html">EXPERIENCE</a></li>
-        <li><a href="projects-section.html">PROJECTS</a></li>
-        <li><a href="contact-section.html">CONTACT</a></li>
+        <li><a href="#profile-section">PROFILE</a></li>
+        <li><a href="#experience-section">EXPERIENCE</a></li>
+        <li><a href="#projects-section">PROJECTS</a></li>
+        <li><a href="#contact-section">CONTACT</a></li>
       </ul>
     </div>
   </nav>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var options = {
+      scrollOffset: 50,
+      activeClass: "active"
+    }
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, options);
+  });
+
+  // function(id) {
+  //   return 'a[href="#' + id + '"]';
+  // }
+</script>
