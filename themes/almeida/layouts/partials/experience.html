@@ -1,22 +1,24 @@
-<div id="experience-section" class="container-fluid bg-light text-center">
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <h1>Experience</h1>
-      <ul class="timeline">
-        {{ range .Site.Data.homepage.experience.items }}
-        <li class="timeline-event">
-          <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy">
-            <p class="timeline-event-thumbnail">{{ .duration }}</p>
-            <h3>{{ .title }}</h3>
-            <h4>{{ .company }}</h4>
-            <p>{{ .description }}</p>
+<div id="experience-section" class="container-fluid bg-light"> 
+  <div class="section">
+      <div class="row">
+          <div class="col s12 m2"></div>
+          <div class="col s12 m8">
+            <h1>Experience</h1>
+            <ul class="timeline">
+              {{ range .Site.Data.homepage.experience.items }}
+              <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-copy">
+                  <p class="timeline-event-thumbnail">{{ .duration }}</p>
+                  <h3>{{ .title }}</h3>
+                  <h4>{{ .company }}</h4>
+                  <p>{{ .description }}</p>
+                </div>
+              </li>
+              {{ end }}
+            </ul>
           </div>
-        </li>
-        {{ end }}
-      </ul>
-    </div>
-    <div class="col-md-2"></div>
+        </div>
+        <div class="col s12 m2"></div>
   </div>
 </div>

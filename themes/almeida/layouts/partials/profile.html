@@ -1,10 +1,10 @@
-<div id="profile-section" class="container-fluid bg-primary text-center">
+<div id="profile-section" class="container-fluid teal lighten-1">
   <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-3">
-        <img src={{ .Site.Params.avatar }} class="img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
+      <div class="col s12 m2"></div>
+      <div class="col s12 m3">
+        <img src={{ .Site.Params.avatar }} class="responsive-img circle margin" style="display:inline" alt="Me" width="250" height="250">
       </div>
-      <div id="profile-text" class="col-md-5">
+      <div id="profile-text" class="col s12 m5">
           <h2>{{ .Site.Params.author }}</h2>
           <h3>{{ .Site.Params.title }}</h3>
           <p>{{ .Site.Params.profile | markdownify }}</p>
@@ -18,6 +18,6 @@
             </a>{{ end }}
           </h2>
       </div>
-      <div class="col-md-2"></div>
+      <div class="col s12 m2"></div>
   </div>
 </div>
