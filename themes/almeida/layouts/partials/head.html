@@ -11,10 +11,6 @@
 
     <!-- Style sheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    {{ $templateStyle := resources.Get "css/colors-template.css" }}
-    {{ $style := $templateStyle | resources.ExecuteAsTemplate "css/color.css" . }}
-    <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
 
     <link rel="stylesheet" href="css/all.min.css">

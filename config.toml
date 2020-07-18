@@ -24,7 +24,7 @@ title = "Inês Almeida"
   profile = "When I'm not working, I make Python scripts to analyze data for fun. When I'm working, I try to do the same. I see myself as a hardworking generalist that enjoys learning new skills and to be useful in the work I do. In the past year, I have built a small video game from scratch, wrote a neuroscience paper, designed a couple websites and discovered the words most used by my friends on shared chats."
   avatar = "img/me.jpg"
   favicon = "img/myfavicon.ico"
-  sections = ["profile", "experience", "contact"]
+  sections = ["profile", "experience", "projects", "contact"]
 
 [params.contact]
   email = "ineesalmeida@gmail.com"
@@ -32,8 +32,8 @@ title = "Inês Almeida"
   instagram = "https://www.instagram.com/inees_almeida/"
   linkedin = "https://www.linkedin.com/in/ines-de-almeida/"
 
-[params.color]
-  primary = "royalblur"
-  secondary = "coral"
-  light = "aliceblue"
-  dark = "#333"
+[params.colors]
+  main_color = "teal darken-1"
+  navbar_color = "teal lighten-2"
+  light_color = "teal lighten-5"
+
