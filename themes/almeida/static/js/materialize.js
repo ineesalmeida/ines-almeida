@@ -6213,14 +6213,15 @@ $jscomp.polyfill = function (e, r, p, m) {
         var $trigger = $(e.target);
         for (var i = ScrollSpy._elements.length - 1; i >= 0; i--) {
           var scrollspy = ScrollSpy._elements[i];
-          if ($trigger.is('a[href="#' + scrollspy.$el.attr('id') + '"]')) {
+          var item_path = 'a[href="#' + scrollspy.$el.attr('id') + '"]';
+          if ($trigger.is(item_path) || $trigger.offsetParent().is(item_path)) {
             e.preventDefault();
             var offset = scrollspy.$el.offset().top + 1;
 
             anim({
               targets: [document.documentElement, document.body],
               scrollTop: offset - scrollspy.options.scrollOffset,
-              duration: 400,
+              duration: 800,
               easing: 'easeOutCubic'
             });
             break;

@@ -1,22 +1,24 @@
-<div id="profile-section" class="container-fluid {{ .Site.Params.colors.main_color }} section scrollspy">
-  <div class="row">
-      <div class="col s12 m2"></div>
-      <div class="col s12 m3">
-        <img src={{ .Site.Params.avatar }} class="responsive-img circle margin" style="display:inline" alt="Me" width="250" height="250">
+<div id="profile-section" class="valign-wrapper container-fluid {{ .Site.Params.colors.main_color }} section scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m4">
+        <img src={{ .Site.Params.avatar }} class="responsive-img circle margin" style="display:inline" alt="Me"
+          width="300" height="300">
       </div>
-      <div id="profile-text" class="col s12 m5">
-          <h2>{{ .Site.Data.homepage.profile.author }}</h2>
-          <h4>{{ .Site.Data.homepage.profile.title }}</h4>
-          <p>{{ .Site.Data.homepage.profile.content }}</p>
-          <h2>
-            {{ with .Site.Params.email }}<a class="icon" href="mailto:{{ . }}" target="_blank" rel="noopener me">
-              <i class="fas fa-envelope" title="email" aria-label="Send email."></i>
-            </a>{{ end }}
-            {{ range $contact_key,  $contact_link := .Site.Params.contact }}<a class="icon" href="{{ $contact_link }}" target="_blank" rel="noopener me">
-              <i class="fab fa-{{ $contact_key }}" title="{{ $contact_key }}" aria-label="Go to {{ $contact_key }}."></i>
-            </a>{{ end }}
-          </h2>
+      <div id="profile-text" class="col s12 m8">
+        <h2>{{ .Site.Data.homepage.profile.author }}</h2>
+        <h4>{{ .Site.Data.homepage.profile.title }}</h4>
+        <p>{{ .Site.Data.homepage.profile.content }}</p>
+        <h2>
+          {{ with .Site.Params.email }}<a class="icon" href="mailto:{{ . }}" target="_blank" rel="noopener me">
+            <i class="fas fa-envelope" title="email" aria-label="Send email."></i>
+          </a>{{ end }}
+          {{ range $contact_key,  $contact_link := .Site.Params.contact }}<a class="icon" href="{{ $contact_link }}"
+            target="_blank" rel="noopener me">
+            <i class="fab fa-{{ $contact_key }}" title="{{ $contact_key }}" aria-label="Go to {{ $contact_key }}."></i>
+          </a>{{ end }}
+        </h2>
       </div>
-      <div class="col s12 m2"></div>
+    </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -17,8 +17,7 @@
 
         // Scrollspy JS
         var scroll_options = {
-            scrollOffset: 50,
-            activeClass: "active"
+            scrollOffset: 0,
         }
         var scroll_elems = document.querySelectorAll('.scrollspy');
         var instances = M.ScrollSpy.init(scroll_elems, scroll_options);
