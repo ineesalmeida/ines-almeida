@@ -1,19 +1,26 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-    console.log("sadsafa")
-</script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var options = {
-        scrollOffset: 50,
-        activeClass: "active"
+        // Navbar JS
+        var navbar_options = {}
+        var navbar_elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(navbar_elems, navbar_options);
+
+        // Tooltip JS
+        var tooltip_options = {
+            enterDelay: 50,
+            inDuration: 400
         }
-        var elems = document.querySelectorAll('.scrollspy');
-        var instances = M.ScrollSpy.init(elems, options);
+        var tooltip_elems = document.querySelectorAll('.tooltipped');
+        var instances = M.Tooltip.init(tooltip_elems, tooltip_options);
+
+        // Scrollspy JS
+        var scroll_options = {
+            scrollOffset: 50,
+            activeClass: "active"
+        }
+        var scroll_elems = document.querySelectorAll('.scrollspy');
+        var instances = M.ScrollSpy.init(scroll_elems, scroll_options);
     });
-    
-    // function(id) {
-    //   return 'a[href="#' + id + '"]';
-    // }
 </script>

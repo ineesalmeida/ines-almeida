@@ -5,10 +5,9 @@
         <img src={{ .Site.Params.avatar }} class="responsive-img circle margin" style="display:inline" alt="Me" width="250" height="250">
       </div>
       <div id="profile-text" class="col s12 m5">
-          <h2>{{ .Site.Params.author }}</h2>
-          <h3>{{ .Site.Params.title }}</h3>
-          <p>{{ .Site.Params.profile | markdownify }}</p>
-
+          <h2>{{ .Site.Data.homepage.profile.author }}</h2>
+          <h4>{{ .Site.Data.homepage.profile.title }}</h4>
+          <p>{{ .Site.Data.homepage.profile.content }}</p>
           <h2>
             {{ with .Site.Params.email }}<a class="icon" href="mailto:{{ . }}" target="_blank" rel="noopener me">
               <i class="fas fa-envelope" title="email" aria-label="Send email."></i>

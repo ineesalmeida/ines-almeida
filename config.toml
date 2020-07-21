@@ -21,7 +21,6 @@ title = "Inês Almeida"
 [params]
   author = "Inês Almeida"
   title = "Software Engineer | Biomedical Engineer, MSc."
-  profile = "When I'm not working, I make Python scripts to analyze data for fun. When I'm working, I try to do the same. I see myself as a hardworking generalist that enjoys learning new skills and to be useful in the work I do. In the past year, I have built a small video game from scratch, wrote a neuroscience paper, designed a couple websites and discovered the words most used by my friends on shared chats."
   avatar = "img/me.jpg"
   favicon = "img/myfavicon.ico"
   sections = ["profile", "experience", "projects", "contact"]

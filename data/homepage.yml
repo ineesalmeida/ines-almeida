@@ -1,54 +1,25 @@
 # homepage
 homepage:
-  head:
-    title: "Inês Almeida"
-
-# showcase
-showcase:
-  enable: true
-  title: "Hello, I’m Andreas."
-  subtitle: "Front-End Developer"
-  description: "I work at <a target='_blank' href='https://radity.com/'>Radity</a>, a software development company in Switzerland. And I am a Raditian. You get the idea where theme name comes from. Keep cool, stay in touch. You can download this theme from <a target='_blank' href='https://github.com/radity/raditian-free-hugo-theme'>github</a>."
-  image:
-    alt: "Showcase keyboard and mouse image"
-    x: "img/showcase/showcase.png"
-    _2x: "img/showcase/showcase@2x.png"
-  imageMobile:
-    alt: "Showcase keyboard and mouse image"
-    x: "img/showcase/showcase-mobile.jpg"
-
-  button:
-    icon: "icon-mail-fill"
-    btnText: "Contact"
-    URL: "https://radity.com/en/contact/"
-
   socialLinks:
     - icon: "linkedin"
-      URL: "https://www.linkedin.com/company/radity/"
+      URL: "https://www.linkedin.com/ines-de-almeida/"
 
     - icon: "github"
-      URL: "https://github.com/radity"
-
-    - icon: "twitter"
-      URL: "https://twitter.com/radity"
+      URL: "https://github.com/ineesalmeida"
 
     - icon: "instagram"
-      URL: "https://www.instagram.com/teamradity/"
+      URL: "https://www.instagram.com/ineesalmeida/"
 
 # profile
 profile:
   enable: true
-  title: "Who am I?"
-  content: '<p class="lead">
-    I am back, after a few days of vacationing with family. Weather was awesome, the beach was
-    full of nasty jelly-fish, yuk! All-in-all, life has been good. I hope life has been as
-    good for all of you.
-    </p>
-    <p class="lead">
-    My area of focus lies in designing web and mobile products, user research as well as
-    leading of design & front-end teams. I enjoy designing and coding the UI as much as
-    talking with users to iterate and improve the experiences that reach business goals.
-    </p>'
+  author: "Inês Almeida"
+  title: "Software Engineer | Biomedical Engineer"
+  content: When I am not working, I make Python scripts to analyze data for fun. When I am working, 
+    I try to do the same. I see myself as a hardworking generalist that enjoys learning new 
+    skills and to be useful in the work I do. In the past year, I have built a small video 
+    game from scratch, wrote a neuroscience paper, designed a couple websites and discovered 
+    the words most used by my friends on shared chats.
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
@@ -62,13 +33,9 @@ education:
   enable: true
   title: "Education"
   items:
-    - university: "University of Waterloo"
+    - university: "University of Lisbon"
       year: "2012-2017"
-      degree: "Bachelor of Applied Science (BASc), Electrical Engineering"
-
-    - university: "Sir John A Macdonald CI"
-      year: "2009-2012"
-      degree: "High School Diploma, Sciences, Math, Computer & Business Studies"
+      degree: "Biomedical Engineering and Biophysics (BSc + MSc)"
 
 # experience
 experience:
@@ -100,66 +67,67 @@ experience:
       duration: "Jun 2009 - Mar 2010"
       description: "To anyone stumbling through the internet that finds this issue for related reasons: Somewhere in your YAML you have extra spaces (or not enough spaces) before a key value. Thank you all for helping me solve this on a completely different project!"
 
-  projects:
-    - title: "Radity Finance - UI Kit"
-      slug: "1"
-      description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "img/works/radity-finance.jpg"
-        _2x: "img/works/radity-finance@2x.jpg"
-      is_even: true
+# projects
+projects:
+  - title: "Radity Finance - UI Kit"
+    slug: "1"
+    description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+    button:
+      icon: "icon-arrow-right"
+      btnText: "Case Study"
+      URL: "#"
+    image:
+      x: "img/works/radity-finance.jpg"
+      _2x: "img/works/radity-finance@2x.jpg"
+    is_even: true
 
-    - title: "Swiss Fintech Website"
-      slug: "2"
-      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "img/works/swissfintech.jpg"
-        _2x: "img/works/swissfintech@2x.jpg"
-      is_even: false
+  - title: "Swiss Fintech Website"
+    slug: "2"
+    description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+    button:
+      icon: "icon-arrow-right"
+      btnText: "Case Study"
+      URL: "#"
+    image:
+      x: "img/works/swissfintech.jpg"
+      _2x: "img/works/swissfintech@2x.jpg"
+    is_even: false
 
-    - title: "Swiss Fintech Website"
-      slug: "3"
-      description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "img/works/swissfintech.jpg"
-        _2x: "img/works/swissfintech@2x.jpg"
-      is_even: false
+  - title: "Swiss Fintech Website"
+    slug: "3"
+    description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+    button:
+      icon: "icon-arrow-right"
+      btnText: "Case Study"
+      URL: "#"
+    image:
+      x: "img/works/swissfintech.jpg"
+      _2x: "img/works/swissfintech@2x.jpg"
+    is_even: false
 
-    - title: "Robo Advisor"
-      slug: "4"
-      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "img/works/robo-advisor.jpg"
-        _2x: "img/works/robo-advisor@2x.jpg"
-      is_even: true
-      
-    - title: "Robo Advisor"
-      slug: "5"
-      description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
-      button:
-        icon: "icon-arrow-right"
-        btnText: "Case Study"
-        URL: "#"
-      image:
-        x: "img/works/robo-advisor.jpg"
-        _2x: "img/works/robo-advisor@2x.jpg"
-      is_even: true
+  - title: "Robo Advisor"
+    slug: "4"
+    description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+    button:
+      icon: "icon-arrow-right"
+      btnText: "Case Study"
+      URL: "#"
+    image:
+      x: "img/works/robo-advisor.jpg"
+      _2x: "img/works/robo-advisor@2x.jpg"
+    is_even: true
+    
+  - title: "Robo Advisor"
+    slug: "5"
+    description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+    button:
+      icon: "icon-arrow-right"
+      btnText: "Case Study"
+      URL: "#"
+    image:
+      x: "img/works/robo-advisor.jpg"
+      _2x: "img/works/robo-advisor@2x.jpg"
+    is_even: true
 
 # contact
 contact:
