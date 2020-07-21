@@ -1,11 +1,11 @@
 <div id="profile-section" class="valign-wrapper container-fluid {{ .Site.Params.colors.main_color }} section scrollspy">
   <div class="container">
     <div class="row">
-      <div class="col s12 m4">
+      <div class="valign-wrapper col m12 l4">
         <img src={{ .Site.Params.avatar }} class="responsive-img circle margin" style="display:inline" alt="Me"
           width="300" height="300">
       </div>
-      <div id="profile-text" class="col s12 m8">
+      <div id="profile-text" class="col m12 l8">
         <h2>{{ .Site.Data.homepage.profile.author }}</h2>
         <h4>{{ .Site.Data.homepage.profile.title }}</h4>
         <p>{{ .Site.Data.homepage.profile.content }}</p>
