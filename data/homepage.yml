@@ -14,7 +14,7 @@ homepage:
 profile:
   enable: true
   author: "Inês Almeida"
-  title: "Software Engineer | Biomedical Engineer"
+  title: ["Software Engineer", "Biomedical Engineer"]
   content: When I am not working, I make Python scripts to analyze data for fun. When I am working, 
     I try to do the same. I see myself as a hardworking generalist that enjoys learning new 
     skills and to be useful in the work I do. In the past year, I have built a small video 
@@ -72,60 +72,78 @@ projects:
   - title: "Radity Finance - UI Kit"
     slug: "1"
     description: "We have been receiving a lot of requests for a Finance Kit recently due to the popularity of Fintech."
+    full_description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
     button:
       icon: "icon-arrow-right"
       btnText: "Case Study"
       URL: "#"
     image:
-      x: "img/works/radity-finance.jpg"
+      x: "img/projects/placeholder6.jpeg"
       _2x: "img/works/radity-finance@2x.jpg"
     is_even: true
 
   - title: "Swiss Fintech Website"
     slug: "2"
     description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+    full_description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
     button:
       icon: "icon-arrow-right"
       btnText: "Case Study"
       URL: "#"
     image:
-      x: "img/works/swissfintech.jpg"
+      x: "img/projects/placeholder2.jpg"
       _2x: "img/works/swissfintech@2x.jpg"
     is_even: false
 
   - title: "Swiss Fintech Website"
     slug: "3"
     description: "The Swiss Finance + Technology Association is the leading FinTech hub in Switzerland."
+    full_description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
     button:
       icon: "icon-arrow-right"
       btnText: "Case Study"
       URL: "#"
     image:
-      x: "img/works/swissfintech.jpg"
-      _2x: "img/works/swissfintech@2x.jpg"
+      x: "img/projects/placeholder3.jpeg"
+      _2x: "img/works/swissfintech@2x.jpeg"
     is_even: false
 
   - title: "Robo Advisor"
     slug: "4"
     description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+    full_description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
     button:
       icon: "icon-arrow-right"
       btnText: "Case Study"
       URL: "#"
     image:
-      x: "img/works/robo-advisor.jpg"
+      x: "img/projects/placeholder4.jpg"
       _2x: "img/works/robo-advisor@2x.jpg"
     is_even: true
     
   - title: "Robo Advisor"
     slug: "5"
     description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+    full_description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
     button:
       icon: "icon-arrow-right"
       btnText: "Case Study"
       URL: "#"
     image:
-      x: "img/works/robo-advisor.jpg"
+      x: "img/projects/placeholder5.jpg"
+      _2x: "img/works/robo-advisor@2x.jpg"
+    is_even: true
+    
+  - title: "Cool Project"
+    slug: "5"
+    description: "Robo Advisor is a Swiss Wealth Manager and wants to create the best digital experience for its UNHW clients across the world. We started with a whiteboard."
+    full_description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
+    button:
+      icon: "icon-arrow-right"
+      btnText: "Case Study"
+      URL: "#"
+    image:
+      x: "img/projects/placeholder6.jpeg"
       _2x: "img/works/robo-advisor@2x.jpg"
     is_even: true
 
@@ -137,15 +155,10 @@ contact:
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
-  phone:
-    title: "Phone Number"
-    number: "+41 (44) 505 10 99"
-  email:
-    title: "Email"
-    email: '<a href="mailto:ineesalmeida@gmail.com">ineesalmeida@gmail.com</a>'
-  address:
-    title: "Address"
-    address: "Radity GmbH<br />Max-Bill-Platz 5, 8050 Zürich"
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
+  links:
+    email: "ineesalmeida@gmail.com"
+    linkedin: "<a href=https://www.linkedin.com/in/ines-de-almeida/>/ines-de-almeida</a>"
+    address: "Portugal"

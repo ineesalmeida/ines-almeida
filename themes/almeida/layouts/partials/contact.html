@@ -3,11 +3,10 @@
     <div class="row">
       <h2>Contact Me</h2>
       <div class="col s12 m4">
-        <p>Inês Almeida</p>
-        <p>Inês Almeida</p>
-        <p>Inês Almeida</p>
-        <p>Inês Almeida</p>
-        <p>Inês Almeida</p>
+        {{ range $contact_key,  $contact_link := .Site.Data.homepage.contact.links }}
+          <p><i class="fab fa-{{ $contact_key }}" title="{{ $contact_key }}" aria-label="Go to {{ $contact_key }}."></i>
+          {{ $contact_link | safeHTML }}
+        {{ end }}
       </div>
       <div class="col s12 m8">
         <div class="contact-form">

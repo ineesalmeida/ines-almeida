@@ -1,31 +1,36 @@
-<div id="projects-section" class="valign-wrapper container-fluid section scrollspy {{ .Site.Params.colors.main_color }}">
+<div id="projects-section" class="valign-wrapper container-fluid section scrollspy light_color light-section">
   <div class="container">
     <h1>Projects</h1>
-    <div class="carousel">
+    <div class="row">
       {{ range .Site.Data.homepage.projects }}
-      <div class="carousel-item modal-trigger" href="#modal_{{ .slug }}">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/projects/placeholder.png">
-            <span class="card-title">{{ .title }}</span>
+      <a href="#modal_{{ .slug }}" class="modal-trigger">
+        <div class="col s12 m6 l4 project-card" style='background-image: url({{ .image.x }})'>
+          <div class="project-card-content valign-wrapper">
+            <div>
+              <h4>{{ .title }}</h4>
+              <p>{{ .description }}</p>
+            </div>
           </div>
-          <div class="card-content">
-            <p>{{ .description }}</p>
-          </div>
         </div>
-      </div>
-
-      <!-- Modal Structure -->
-      <div id="#modal_{{ .slug }}" class="modal">
-        <div class="modal-content">
-          <h4>{{ .title }}</h4>
-          <p>{{ .description }}</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-        </div>
-      </div>
+      </a>
       {{ end }}
     </div>
+
+    <!-- Modal Structure -->
+    {{ range .Site.Data.homepage.projects }}
+    <div id="modal_{{ .slug }}" class="modal project-modal">
+      <div class="row flex">
+        <div class="col s12 m4 modal-project-image">
+          <img src="{{ .image.x }}" alt="Project">
+        </div>
+        <div class="col s12 m8">
+          <div class="modal-content">
+            <h4>{{ .title }}</h4>
+            <p>{{ .full_description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
   </div>
 </div>

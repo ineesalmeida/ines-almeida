@@ -20,10 +20,10 @@ title = "Inês Almeida"
 
 [params]
   author = "Inês Almeida"
-  title = "Software Engineer | Biomedical Engineer, MSc."
   avatar = "img/me.jpg"
   favicon = "img/myfavicon.ico"
-  sections = ["profile", "experience", "projects", "contact"]
+  sections = ["profile", "projects", "contact"]
+  secondary_sections = ["experience"]
 
 [params.contact]
   email = "ineesalmeida@gmail.com"

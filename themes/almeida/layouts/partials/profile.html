@@ -1,13 +1,22 @@
 <div id="profile-section" class="valign-wrapper container-fluid {{ .Site.Params.colors.main_color }} section scrollspy">
   <div class="container">
     <div class="row">
-      <div class="valign-wrapper col m12 l4">
-        <img src={{ .Site.Params.avatar }} class="responsive-img circle margin" style="display:inline" alt="Me"
-          width="300" height="300">
+      <div class="valign-wrapper center full-width col m12 l4">
+        <img src={{ .Site.Params.avatar }} class="responsive-img circle margin center" alt="Me" width="250" height="250">
       </div>
-      <div id="profile-text" class="col m12 l8">
+      <div id="profile-text" class="col m12 l8 center_when_medium text-padding">
         <h2>{{ .Site.Data.homepage.profile.author }}</h2>
-        <h4>{{ .Site.Data.homepage.profile.title }}</h4>
+        <h4>
+          <p class="profile-title-animation" data-type='{{ .Site.Data.homepage.profile.title }}'>
+            <span class="wrap"></span>
+          </p>
+        </h4>
+        <h4 class="rotatingText">
+          {{ range .Site.Data.homepage.profile.title }}
+            <span class="rotatingText-adjective">{{.}}</span>
+          {{ end }}
+        </h4>
+        </h4>
         <p>{{ .Site.Data.homepage.profile.content }}</p>
         <h2>
           {{ with .Site.Params.email }}<a class="icon" href="mailto:{{ . }}" target="_blank" rel="noopener me">
