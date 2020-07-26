@@ -9,6 +9,11 @@
             <div>
               <h4>{{ .title }}</h4>
               <p>{{ .description }}</p>
+              <div class="badge-container">
+                {{ range .labels }}
+                  <span class="badge">{{ . }}</span>
+                {{ end }}
+              </div>
             </div>
           </div>
         </div>
@@ -19,16 +24,30 @@
     <!-- Modal Structure -->
     {{ range .Site.Data.homepage.projects }}
     <div id="modal_{{ .slug }}" class="modal project-modal">
+      <span class="modal-close">&#10005</span>
       <div class="row flex">
-        <div class="col s12 m4 modal-project-image">
-          <img src="{{ .image.x }}" alt="Project">
-        </div>
+        {{ if .image._2x }}
         <div class="col s12 m8">
           <div class="modal-content">
             <h4>{{ .title }}</h4>
-            <p>{{ .full_description }}</p>
+            <p>{{ .full_description | safeHTML }}</p>
+            {{ if .button.URL }}
+            <a href="{{ .button.URL }}" class="waves-effect waves-light btn">{{ .button.btnText }}</a>
+            {{ end }}
           </div>
         </div>
+        <div class="col s12 m4 modal-project-image">
+          <img src="{{ .image._2x }}" alt="Project">
+        </div>
+        {{ else }}
+        <div class="modal-content">
+          <h4>{{ .title }}</h4>
+          <p>{{ .full_description | safeHTML }}</p>
+          {{ if .button.URL }}
+            <a href="{{ .button.URL }}" class="waves-effect waves-light btn">{{ .button.btnText }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
       </div>
     </div>
     {{ end }}

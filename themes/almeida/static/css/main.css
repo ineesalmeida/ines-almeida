@@ -7,13 +7,20 @@
 }
 
 body {
-  font: 20px Montserrat, sans-serif;
+  font: 20px Open Sans Condensed, sans-serif;
   line-height: 1.8;
-  color: #f5f6f7;
+  color: white;
   text-align: left;
 }
 
-p {font-size: 16px;}
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+p {
+  font: 16px Montserrat, sans-serif;
+  line-height: 1.6;
+}
 
 .light-section {
   color: #333;
@@ -88,7 +95,12 @@ p {font-size: 16px;}
 }
 
 .row .col.project-card h4 {
-  font-size: 20pt;
+  font-size: 16pt;
+  font-weight: 700;
+}
+
+.row .col.project-card p {
+  font-size: 12pt;
 }
 
 .row  .col .project-card-content {
@@ -104,12 +116,13 @@ p {font-size: 16px;}
 }
 
 .col .project-card-content:hover {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-modal {
   background-color: #333;
-  height: 500px;
+  font-size: 12pt;
+  min-height: 300px;
   color: white;
   border-radius: 10px;
   padding: 0;
@@ -118,7 +131,7 @@ p {font-size: 16px;}
 
 .project-modal .modal-project-image {
   overflow: hidden;
-  height: 500px;
+  height: 100%;
   padding: 0;
   position: relative;
   clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
@@ -126,15 +139,61 @@ p {font-size: 16px;}
 
 .project-modal .modal-project-image img {
   height: 500px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .project-modal .modal-project-image{
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .project-modal {
+    overflow-y: scroll;
+  }
+  .project-modal .modal-project-image img {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
 
 .modal .modal-content {
-  padding: 2rem;
-  overflow: hidden;
-  height: 500px;
+  padding: 2.4rem;
 }
 
 .flex {
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
+  margin: 0;
+}
+
+.modal-close {
+  right: 20px;
+  top: 10px;
+  position: fixed;
+  transition: transform 0.5s ease;
+
+}
+
+.modal-close:hover {
+  transform: rotate(90deg)
+}
+
+.badge-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-direction: row;
+}
+
+span.badge {
+  background-color: teal;
+  color: white;
+  border-radius: 10px;
+  font-size: 8pt;
+  margin: 1px;
 }
