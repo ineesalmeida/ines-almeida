@@ -11,7 +11,8 @@ disableRSS = true
 enableRobotsTXT = true
 editor = "nano"
 languageCode = "en-us"
-theme = "vncnt-hugo"
+# theme = "vncnt-hugo"
+theme = "almeida"
 title = "Inês Almeida"
 
 [permalinks]
@@ -19,14 +20,19 @@ title = "Inês Almeida"
 
 [params]
   author = "Inês Almeida"
-  email = "ineesalmeida@gmail.com"
-  description = "Landing Page"
-  bio = "Software Developer.  \nBiomedical Engineer.  \nGraphic Design Enthusiast"
   avatar = "img/me.jpg"
   favicon = "img/myfavicon.ico"
-  error404 = "There is no such page."
+  sections = ["profile", "projects", "contact"]
+  secondary_sections = ["experience"]
 
 [params.contact]
+  email = "ineesalmeida@gmail.com"
   github = "https://github.com/ineesalmeida"
   instagram = "https://www.instagram.com/inees_almeida/"
   linkedin = "https://www.linkedin.com/in/ines-de-almeida/"
+
+[params.colors]
+  main_color = "teal darken-1"
+  navbar_color = "teal lighten-2"
+  light_color = "teal lighten-5"
+

@@ -1,0 +1,55 @@
+<div id="projects-section" class="valign-wrapper container-fluid section scrollspy light_color light-section">
+  <div class="container">
+    <h1>Projects</h1>
+    <div class="row">
+      {{ range .Site.Data.homepage.projects }}
+      <a href="#modal_{{ .slug }}" class="modal-trigger">
+        <div class="col s12 m6 l4 project-card" style='background-image: url({{ .image.x }})'>
+          <div class="project-card-content valign-wrapper">
+            <div>
+              <h4>{{ .title }}</h4>
+              <p>{{ .description }}</p>
+              <div class="badge-container">
+                {{ range .labels }}
+                  <span class="badge">{{ . }}</span>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+
+    <!-- Modal Structure -->
+    {{ range .Site.Data.homepage.projects }}
+    <div id="modal_{{ .slug }}" class="modal project-modal">
+      <span class="modal-close">&#10005</span>
+      <div class="row flex">
+        {{ if .image._2x }}
+        <div class="col s12 m8">
+          <div class="modal-content">
+            <h4>{{ .title }}</h4>
+            <p>{{ .full_description | safeHTML }}</p>
+            {{ if .button.URL }}
+            <a href="{{ .button.URL }}" class="waves-effect waves-light btn">{{ .button.btnText }}</a>
+            {{ end }}
+          </div>
+        </div>
+        <div class="col s12 m4 modal-project-image">
+          <img src="{{ .image._2x }}" alt="Project">
+        </div>
+        {{ else }}
+        <div class="modal-content">
+          <h4>{{ .title }}</h4>
+          <p>{{ .full_description | safeHTML }}</p>
+          {{ if .button.URL }}
+            <a href="{{ .button.URL }}" class="waves-effect waves-light btn">{{ .button.btnText }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
