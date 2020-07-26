@@ -1,0 +1,18 @@
+<div id="experience-section" class="valign-wrapper container-fluid section scrollspy light-section">
+  <div class="container">
+    <h1>Experience</h1>
+    <ul class="timeline">
+      {{ range .Site.Data.homepage.experience.items }}
+      <li class="timeline-event">
+        <label class="timeline-event-icon"></label>
+        <div class="timeline-event-copy">
+          <p class="timeline-event-thumbnail">{{ .duration }}</p>
+          <h3>{{ .title }}</h3>
+          <h4>{{ .company }}</h4>
+          <p>{{ .description }}</p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

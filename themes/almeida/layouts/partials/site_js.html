@@ -1,0 +1,36 @@
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/animations.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Navbar JS
+        var navbar_options = {
+            direction: 'top'
+        }
+        var navbar_elems = document.querySelectorAll('.fixed-action-btn');
+        M.FloatingActionButton.init(navbar_elems, navbar_options);
+
+        // Tooltip JS
+        var tooltip_options = {
+            enterDelay: 50,
+            inDuration: 400
+        }
+        var tooltip_elems = document.querySelectorAll('.tooltipped');
+        M.Tooltip.init(tooltip_elems, tooltip_options);
+
+        // Scrollspy JS
+        var scroll_options = {
+            scrollOffset: 0,
+        }
+        var scroll_elems = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll_elems, scroll_options);
+        
+        // Projects Modal JS
+        var modal_elems = document.querySelectorAll('.modal');
+        project_options = {
+            inDuration: 500
+        }
+        M.Modal.init(modal_elems, project_options);
+    });
+
+</script>

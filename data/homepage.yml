@@ -1,0 +1,203 @@
+# homepage
+homepage:
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/ines-de-almeida/"
+
+    - icon: "github"
+      URL: "https://github.com/ineesalmeida"
+
+    - icon: "instagram"
+      URL: "https://www.instagram.com/ineesalmeida/"
+
+# profile
+profile:
+  enable: true
+  author: "Inês Almeida"
+  title: ["Software Engineer"]
+  content: When I am not working, I make Python scripts to analyze data for fun. When I am working, 
+    I try to do the same. I see myself as a hardworking generalist that enjoys learning new 
+    skills and to be useful in the work I do. In the past year, I have built a small video 
+    game from scratch, wrote a neuroscience paper, designed a couple websites and discovered 
+    the words most used by my friends on shared chats.
+  button:
+    icon: "icon-smile-fill"
+    btnText: "About Me"
+    URL: "https://www.linkedin.com/company/radity/"
+  image:
+    x: "img/who-am-i/user-picture.png"
+    _2x: "img/who-am-i/user-picture@2x.png"
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "University of Lisbon"
+      year: "2012-2017"
+      degree: "Biomedical Engineering and Biophysics (BSc + MSc)"
+
+# experience
+experience:
+  enable: true
+  title: "Experience"
+  description: "Over 15+ years of experience working with companies from all over the world. I design & develop digital products to help businesses and improve people's lives."
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/company/radity/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download My Resume"
+    URL: "#"
+
+  items:
+    - title: "Software Engineer"
+      company: "Perspectum"
+      duration: "Jan 2020 - Now"
+      description: "To anyone stumbling through the internet that finds this issue for related reasons: Somewhere in your YAML you have extra spaces (or not enough spaces) before a key value. Thank you all for helping me solve this on a completely different project!"
+
+    - title: "Test Engineer"
+      company: "Perspectum"
+      duration: "Mar 2019 - Jan 2020"
+      description: "To anyone stumbling through the internet that finds this issue for related reasons: Somewhere in your YAML you have extra spaces (or not enough spaces) before a key value. Thank you all for helping me solve this on a completely different project!"
+
+    - title: "Lab Technician"
+      company: "Cyberse"
+      duration: "Jun 2009 - Mar 2010"
+      description: "To anyone stumbling through the internet that finds this issue for related reasons: Somewhere in your YAML you have extra spaces (or not enough spaces) before a key value. Thank you all for helping me solve this on a completely different project!"
+
+# projects
+projects:
+  - title: "Almeida Hugo Theme"
+    slug: "theme-hugo"
+    description: "Open source Hugo Theme created for this website and shared with the world"
+    full_description: "That's how this portfolio website came to be.</br></br>Hugo is one of the most popular open-source static site generators. I generated an open-source new Hugo Theme from scratch using HTML, CSS and JS to build my own portfolio website."
+    button:
+      icon: ""
+      btnText: "Hugo"
+      URL: "https://gohugo.io/"
+    image:
+      x: "img/projects/gohugo.png"
+      _2x: "img/projects/gohugo_2.png"
+    labels: ["CSS", "HTML", "JS", "Hugo"]
+
+  - title: "Cell by Cell"
+    slug: "cell-by-cell"
+    description: "Videogame to teach young kids about Flow Cytometry"
+    full_description: "When working in the Gulbenkian Science Institute (<a href=''>IGC</a>), I had the challenge of building a videogame to young people what we did in our lab.<br><br>I created Cell-by-Cell in Unity using C# where the players would learn about Flow Cytometry, cell Sorting and sorting efficiency vs. purity. We also build a controller with a blue and a red button to make it more fun for kids.<br><br>Unfortunatelly, I didn't have the time to improve the art and add cool features before the release, but it was quita a fun and successful project!"
+    button:
+      icon: ""
+      btnText: "Play"
+      URL: "http://facilities.igc.gulbenkian.pt/flowcytometry/cell_by_cell_web/index.html"
+    image:
+      x: "img/projects/cellbycell.png"
+      _2x: "img/projects/cellbycell_2.png"
+    labels: ["Unity", "C#"]
+
+  - title: "BoomVRang"
+    slug: "boomvrang"
+    description: "Simple shooter style VR videogame made for Oculus Quest"
+    full_description: "Simple shooter style VR videogame made for Oculus Quest.<br><br>The premisse of the game is to through and catch a boomerang to destroy the enemies."
+    button:
+      icon: "icon-arrow-right"
+      btnText: ""
+      URL: ""
+    image:
+      x: "img/projects/boomvrang.png"
+      _2x: "img/projects/boomvrang.png"
+    labels: ["Unity", "C#", "Blender"]
+
+  - title: "Who You Talk To"
+    slug: "who-you-talk-to"
+    description: "Python project to analysis chat messages to find out cool stats about the conversation with friends"
+    full_description: "When Facebook added the functionality for users to download all their information, we started questioning if we could find out some cool stats about our conversations.<br><br>That led me to me building in python and offline analysis and visualization tool that would show the user: it's top chats, the word/message counts, which words were most unique for a person, "
+    button:
+      icon: ""
+      btnText: ""
+      URL: ""
+    image:
+      x: "img/projects/whoyoutalkto.png"
+      _2x: "img/projects/whoyoutalkto.png"
+    labels: ["Python", "Data Science"]
+
+  - title: "NE2B2"
+    slug: "ne2b2"
+    description: "Website for Biomedical Engineering Students Organization"
+    full_description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
+    button:
+      icon: "icon-arrow-right"
+      btnText: ""
+      URL: ""
+    image:
+      x: "img/projects/ne2b2.png"
+      _2x: "img/projects/ne2b2.png"
+    labels: ["Design", "HTML", "CSS"]
+    
+  - title: "WBME"
+    slug: "wbme"
+    description: "Website for Workshop for Biomedical Engineering"
+    full_description: ""
+    button:
+      icon: "icon-arrow-right"
+      btnText: ""
+      URL: ""
+    image:
+      x: "img/projects/wbme.png"
+      _2x: "img/projects/wbme.png"
+    labels: ["Design", "HTML", "CSS"]
+  
+  - title: "EBEC Graphic Design"
+    slug: "ebec"
+    description: "Designed material for the Board of European Students of Technology of Graz."
+    full_description: "During my Master's Thesis Internship in Graz (Austria), I joined the Board of European Students of Technology to help organize events and create design material.<br><br>I deisgned all the material for one of their most famous competions called EBEC."
+    button:
+      icon: "icon-arrow-right"
+      btnText: "Case Study"
+      URL: ""
+    image:
+      x: "img/projects/ebec.jpg"
+      _2x: ""
+    labels: ["Photoshop", "Illustrator", "Design"]
+
+  - title: "S. Vicente"
+    slug: "s-vicente"
+    description: "Main organizer of a Music Festival with attendance of over 2000 people"
+    full_description: "As leader of an university band with over 100 members, I organized a music festival that had over 70 artists, 30 staff and 2000 spectators.<br><br>The money raised was all given to charity and used to fix the bands instruments."
+    button:
+      icon: ""
+      btnText: ""
+      URL: ""
+    image:
+      x: "img/projects/svicente.jpg"
+      _2x: "img/projects/svicente.jpg"
+    labels: ["Misc", "Management", "Music"]
+    
+  - title: "Virtual Library"
+    slug: "biblioteca-virtual"
+    description: "Flask app for my mom to organize the book from her library"
+    full_description: ""
+    button:
+      icon: ""
+      btnText: ""
+      URL: ""
+    image:
+      x: "img/projects/biblioteca-virtual.png"
+      _2x: "img/projects/biblioteca-virtual.png"
+    labels: ["Flask", "Python", "HTML", "CSS", "JS", "SQLAlchemy"]
+    
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  form:
+    full_name: "Full Name"
+    email: "Email Address"
+    message: "Type Your Message Here"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Send Message"
+  links:
+    email: "ineesalmeida@gmail.com"
+    linkedin: "<a href=https://www.linkedin.com/in/ines-de-almeida/>/ines-de-almeida</a>"
+    address: "Portugal"

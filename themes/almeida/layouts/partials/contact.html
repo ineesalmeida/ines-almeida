@@ -1,0 +1,44 @@
+<div id="contact-section" class="valign-wrapper container-fluid text-center section scrollspy grey darken-3">
+  <div class="container">
+    <div class="row">
+      <h2>Contact Me</h2>
+      <div class="col s12 m4">
+        {{ range $contact_key,  $contact_link := .Site.Data.homepage.contact.links }}
+          <p><i class="fab fa-{{ $contact_key }}" title="{{ $contact_key }}" aria-label="Go to {{ $contact_key }}."></i>
+          {{ $contact_link | safeHTML }}
+        {{ end }}
+      </div>
+      <div class="col s12 m8">
+        <div class="contact-form">
+          <form action="{{ .Site.Data.homepage.contact.form.action }}"
+            method="{{ .Site.Data.homepage.contact.form.method }}">
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" class="materialize-textarea" id="full_name" />
+                <label for="full_name">{{ .Site.Data.homepage.contact.form.full_name }}</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" class="materialize-textarea" id="email" />
+                <label for="email">{{ .Site.Data.homepage.contact.form.email }}</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">{{ .Site.Data.homepage.contact.form.message }}</label>
+              </div>
+            </div>
+            <div class="row pt-4">
+              <div class="col s12">
+                <button type="submit" class="btn btn-primary">
+                  <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
+                  {{ .Site.Data.homepage.contact.button.btnText }}
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
