@@ -12,6 +12,10 @@
         margin-right: auto;
         text-align: center;
     }
+
+    .row .col {
+        float: none!important;
+    }
 }
 
 .o-section {

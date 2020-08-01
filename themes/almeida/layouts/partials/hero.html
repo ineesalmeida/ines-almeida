@@ -5,8 +5,10 @@
         <img src={{ .Site.Params.avatar }} class="responsive-img circle" alt="Me" width="300" height="300">
       </div>
       <div class="col m12 l7 a-centerWhenMedium a-textPadding">
-        <h2>{{ .Site.Data.homepage.profile.author }}</h2>
-        <h4>{{ .Site.Data.homepage.profile.title }}</h4>
+        <h2 class="a-mainTitle">{{ .Site.Data.homepage.profile.author }}</h2>
+        {{ range.Site.Data.homepage.profile.title }}
+          <h4 class="a-mainSubtitle">{{ . }}</h4>
+        {{ end }}
         <h4>
           {{ with .Site.Params.email }}<a class="a-icon" href="mailto:{{ . }}" target="_blank" rel="noopener me">
             <i class="fas fa-envelope" title="email" aria-label="Send email."></i>
