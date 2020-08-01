@@ -54,6 +54,7 @@ p {
   border-bottom: none;
   position: relative;
   color: white;
+  margin-right: 5px;
 }
 
 .card {
