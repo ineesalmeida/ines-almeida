@@ -11,6 +11,9 @@ p {
   font: 1.2rem Montserrat, sans-serif;
   line-height: 1.6; }
 
+.light-section h1, .light-section h2, .light-section h3, .light-section h4, .light-section h5, .light-section h6, .light-section p {
+  color: #333; }
+
 @keyframes fadeInOut {
   0% {
     opacity: 0; }
@@ -51,7 +54,7 @@ p {
 .a-marginMedium {
   margin: 3rem; }
 
-.a-textPadding {
+.a-paddingMedium {
   padding: 2rem; }
 
 @media only screen and (max-width: 993px) {
@@ -59,8 +62,8 @@ p {
     margin-left: auto;
     margin-right: auto;
     text-align: center; }
-  .row .col {
-    float: none !important; } }
+    .a-centerWhenMedium .row .col {
+      float: none; } }
 
 .o-section {
   min-height: 100vh;
@@ -71,12 +74,19 @@ p {
 
 .a-icon {
   font-size: 3rem;
+  display: inline-block;
   text-rendering: geometricPrecision !important;
   text-decoration: none;
   border-bottom: none;
   position: relative;
   color: white;
-  margin-right: 0.5px; }
+  margin-right: 1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease-out; }
+  .a-icon:hover {
+    font-size: 3.3rem;
+    margin-right: 0.7rem;
+    margin-top: 0.7rem; }
 
 .flex {
   display: flex;
@@ -92,16 +102,16 @@ p {
   align-content: flex-start;
   flex-direction: row; }
 
-span.badge {
+.badge {
   background-color: teal;
-  color: white;
-  border-radius: 10px;
-  font-size: 8pt;
-  margin: 1px; }
+  color: white !important;
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin: 2px; }
 
 .project-card {
   height: 300px;
-  padding: 0;
+  padding: 0 !important;
   text-align: center;
   color: white;
   background-position: left;
@@ -110,9 +120,11 @@ span.badge {
   background-size: cover; }
   .project-card h4 {
     font-size: 16pt;
-    font-weight: 700; }
+    font-weight: 700;
+    color: white; }
   .project-card p {
-    font-size: 12pt; }
+    font-size: 12pt;
+    color: white; }
   .project-card:hover {
     background-position: right; }
 

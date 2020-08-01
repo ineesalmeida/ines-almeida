@@ -13,4 +13,9 @@ p {
     font: 1.2rem Montserrat, sans-serif;
     line-height: 1.6;
 }
-  
+
+.light-section {
+    h1, h2, h3, h4, h5, h6, p {
+        color: $color-dark;
+    }
+}
