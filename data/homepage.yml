@@ -121,19 +121,6 @@ projects:
       _2x: "img/projects/whoyoutalkto.png"
     labels: ["Python", "Data Science"]
 
-  - title: "NE2B2"
-    slug: "ne2b2"
-    description: "Website for Biomedical Engineering Students Organization"
-    full_description: "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book."
-    button:
-      icon: "icon-arrow-right"
-      btnText: ""
-      URL: ""
-    image:
-      x: "img/projects/ne2b2.png"
-      _2x: "img/projects/ne2b2.png"
-    labels: ["Design", "HTML", "CSS"]
-    
   - title: "WBME"
     slug: "wbme"
     description: "Website for Workshop for Biomedical Engineering"
@@ -146,32 +133,6 @@ projects:
       x: "img/projects/wbme.png"
       _2x: "img/projects/wbme.png"
     labels: ["Design", "HTML", "CSS"]
-  
-  - title: "EBEC Graphic Design"
-    slug: "ebec"
-    description: "Designed material for the Board of European Students of Technology of Graz."
-    full_description: "During my Master's Thesis Internship in Graz (Austria), I joined the Board of European Students of Technology to help organize events and create design material.<br><br>I deisgned all the material for one of their most famous competions called EBEC."
-    button:
-      icon: "icon-arrow-right"
-      btnText: "Case Study"
-      URL: ""
-    image:
-      x: "img/projects/ebec.jpg"
-      _2x: ""
-    labels: ["Photoshop", "Illustrator", "Design"]
-
-  - title: "S. Vicente"
-    slug: "s-vicente"
-    description: "Main organizer of a Music Festival with attendance of over 2000 people"
-    full_description: "As leader of an university band with over 100 members, I organized a music festival that had over 70 artists, 30 staff and 2000 spectators.<br><br>The money raised was all given to charity and used to fix the bands instruments."
-    button:
-      icon: ""
-      btnText: ""
-      URL: ""
-    image:
-      x: "img/projects/svicente.jpg"
-      _2x: "img/projects/svicente.jpg"
-    labels: ["Misc", "Management", "Music"]
     
   - title: "Virtual Library"
     slug: "biblioteca-virtual"
