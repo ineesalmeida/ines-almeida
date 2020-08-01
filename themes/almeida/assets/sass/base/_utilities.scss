@@ -1,0 +1,39 @@
+.a-marginMedium {
+    margin: 3rem;
+}
+
+.a-textPadding {
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 993px) {
+    .a-centerWhenMedium{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.o-section {
+    min-height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+  
+.a-icon {
+    font-size: 3rem;
+    text-rendering: geometricPrecision !important;
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: 0;
+}

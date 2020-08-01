@@ -1,0 +1,63 @@
+
+.splash {
+    position: fixed;
+    color: white;
+    text-align: center;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .text-wrapper {
+        margin-top: 45vh;
+    }
+
+    .text-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    &.display-none {
+        z-index: -10;
+        opacity: 0;
+    }
+}
+  
+.fade-in-out {
+    opacity: 0;
+    animation: fadeInOut 3s ease-in forwards;
+}
+
+.splash-screen {
+    position: fixed;
+    background-color: tomato;
+    right: 0;
+    width: 100vw;
+}
+  
+.splash-top {
+    top: 0;
+    height: 49.8vh;
+
+    &.resize-vertical {
+        animation: resize-vertical 0.5s ease-out forwards;
+    }
+}
+
+.splash-center {
+    top: 0;
+    height: 100vh;
+
+    &.resize-horizontal {
+        animation: resize-horizontal 0.2s ease-out forwards;
+    }
+}
+
+.splash-bottom {
+    bottom: 0;
+    height: 49.8vh;
+
+    &.resize-vertical {
+        animation: resize-vertical 0.5s ease-out forwards;
+    }
+}

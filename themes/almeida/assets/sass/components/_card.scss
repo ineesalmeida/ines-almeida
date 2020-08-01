@@ -1,0 +1,34 @@
+.project-card {
+    height: 300px;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background-position: left;
+    transition: background-position 0.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h4 {
+        font-size: 16pt;
+        font-weight: 700;
+    }
+    p {
+        font-size: 12pt;
+    }
+
+    &:hover {
+        background-position: right;
+    }
+}
+
+.project-card-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+    padding: 1.4rem;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}

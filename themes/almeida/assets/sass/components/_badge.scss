@@ -1,0 +1,16 @@
+.badge-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+}
+  
+span.badge {
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    font-size: 8pt;
+    margin: 1px;
+}

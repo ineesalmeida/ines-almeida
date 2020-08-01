@@ -18,7 +18,7 @@ title = "Inês Almeida"
   author = "Inês Almeida"
   avatar = "img/me.jpg"
   favicon = "img/myfavicon.ico"
-  sections = ["profile", "projects", "contact"]
+  sections = ["hero", "projects", "contact"]
   secondary_sections = ["experience"]
 
 [params.contact]

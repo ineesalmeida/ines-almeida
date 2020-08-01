@@ -1,0 +1,22 @@
+<div id="hero-section" class="valign-wrapper container-fluid {{ .Site.Params.colors.main_color }} o-section scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="col m12 l5 a-centerWhenMedium">
+        <img src={{ .Site.Params.avatar }} class="responsive-img circle" alt="Me" width="300" height="300">
+      </div>
+      <div class="col m12 l7 a-centerWhenMedium a-textPadding">
+        <h2>{{ .Site.Data.homepage.profile.author }}</h2>
+        <h4>{{ .Site.Data.homepage.profile.title }}</h4>
+        <h4>
+          {{ with .Site.Params.email }}<a class="a-icon" href="mailto:{{ . }}" target="_blank" rel="noopener me">
+            <i class="fas fa-envelope" title="email" aria-label="Send email."></i>
+          </a>{{ end }}
+          {{ range $contact_key,  $contact_link := .Site.Params.contact }}<a class="a-icon" href="{{ $contact_link }}"
+            target="_blank" rel="noopener me">
+            <i class="fab fa-{{ $contact_key }}" title="{{ $contact_key }}" aria-label="Go to {{ $contact_key }}."></i>
+          </a>{{ end }}
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>

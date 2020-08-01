@@ -1,0 +1,57 @@
+
+.project-modal {
+    background-color: #333;
+    font-size: 12pt;
+    min-height: 300px;
+    color: white;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+  
+    .modal-project-image {
+        overflow: hidden;
+        height: 100%;
+        padding: 0;
+        position: relative;
+        clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+
+        img {
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+    .project-modal {
+        overflow-y: scroll;
+
+        .modal-project-image{
+            clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .modal-project-image img {
+            width: 100%;
+            height: auto;
+            margin: 5px;
+            max-height: 500px;
+            object-fit: cover;
+        }
+    }
+}
+  
+.modal .modal-content {
+    padding: 2.4rem;
+}
+  
+.modal-close {
+    right: 20px;
+    top: 10px;
+    position: fixed;
+    transition: transform 0.5s ease;
+  
+    &:hover {
+        transform: rotate(90deg)
+    }  
+}
+  
