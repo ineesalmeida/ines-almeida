@@ -1,0 +1,117 @@
+.content {
+  position: absolute; }
+  .content__left {
+    float: left;
+    width: 70%;
+    height: 100%;
+    padding: 3rem 4rem; }
+  .content__right {
+    position: absolute;
+    float: right;
+    width: 29%;
+    background-color: #f5f5f5;
+    height: 100%;
+    padding: 3rem 4rem;
+    right: 1rem;
+    -webkit-box-shadow: 0.5rem 1rem 1.5rem rgba(85, 85, 85, 0.15);
+    -moz-box-shadow: 0.5rem 1rem 1.5rem rgba(85, 85, 85, 0.15);
+    box-shadow: 0.5rem 1rem 1.5rem rgba(85, 85, 85, 0.15); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  background-color: #ddd; }
+
+.content {
+  width: 74rem;
+  height: 104.22535rem;
+  margin: 6rem;
+  background-color: #fff;
+  -webkit-box-shadow: 1rem 2rem 3rem rgba(85, 85, 85, 0.3);
+  -moz-box-shadow: 1rem 2rem 3rem rgba(85, 85, 85, 0.3);
+  box-shadow: 1rem 2rem 3rem rgba(85, 85, 85, 0.3);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  color: #555; }
+
+.mainHeading {
+  text-transform: uppercase;
+  font-size: 5rem;
+  color: #aaa; }
+  .mainHeading span {
+    color: #e3bfb8; }
+
+h1, h2 {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif; }
+
+.section {
+  display: block;
+  margin-bottom: 3rem; }
+
+.experience__item {
+  display: block;
+  margin-bottom: 2rem; }
+
+.experience__job {
+  margin-bottom: 1rem; }
+
+.experience__company {
+  text-align: left;
+  float: left;
+  width: 50%; }
+
+.experience__position {
+  text-align: left;
+  float: left;
+  width: 50%; }
+
+.experience__place {
+  text-align: right;
+  float: right;
+  width: 50%; }
+
+.experience__date {
+  text-align: right;
+  float: right;
+  width: 50%; }
+
+.experience__badges {
+  display: block;
+  text-align: right; }
+
+.experience__badge {
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: inline-block;
+  background-color: #e3bfb8;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.1rem 0.4rem; }
+
+.avatar {
+  display: block; }
+  .avatar__img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 105%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0.5rem 1rem 1.5rem rgba(85, 85, 85, 0.15);
+    -moz-box-shadow: 0.5rem 1rem 1.5rem rgba(85, 85, 85, 0.15);
+    box-shadow: 0.5rem 1rem 1.5rem rgba(85, 85, 85, 0.15); }
